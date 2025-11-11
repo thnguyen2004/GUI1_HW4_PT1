@@ -28,10 +28,7 @@ input[type="number"] {
 }
 
 /* Validation messages */
-#errorMinCol,
-#errorMinRow,
-#errorMaxCol,
-#errorMaxRow {
+label.error {
     color: #c00;
     font-size: 13px;
     margin-top: 4px;

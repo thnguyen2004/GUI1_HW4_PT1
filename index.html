@@ -6,6 +6,9 @@
     <link href="css/style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Source for linking jquery: https://jqueryvalidation.org/ -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.21.0/dist/jquery.validate.min.js"></script>
 </head>
 <body>
     <!-- Parent container styles -->
@@ -15,30 +18,26 @@
             <!-- Title -->
             <h1>Please enter the table ranges</h1>
             <!-- Form -->
-            <form>
+            <form id="range-form">
                 <!-- Minimum Column Value -->
                 <div class="form-group">
                     <label for="minCol">Minimum Column Value (between -50 to 50)</label><br>
                     <input type="number" id="minCol" name="minCol" value='1'><br>
-                    <p id="errorMinCol"></p>
                 </div>
                 <!-- Maximum Column Value -->
                 <div class="form-group">
                     <label for="maxCol">Maximum Column Value (between -50 to 50)</label><br>
                     <input type="number" id="maxCol" name="maxCol" value='10'><br>
-                    <p id="errorMaxCol"></p>
                 </div>
                 <!-- Minimum Row Value -->
                 <div class="form-group">
                     <label for="minRow">Minimum Row Value (between -50 to 50)</label><br>
                     <input type="number" id="minRow" name="minRow" value='1'><br>
-                    <p id="errorMinRow"></p>
                 </div>
                 <!-- Maximum Row Value -->
                 <div class="form-group">
                     <label for="maxRow">Maximum Row Value (between -50 to 50)</label><br>
                     <input type="number" id="maxRow" name="maxRow" value='10'><br>
-                    <p id="errorMaxRow"></p>
                 </div>
                 <!-- Submit Button -->
                 <button id="submit" type="submit" class="btn btn-primary">Regenerate Table</button>
