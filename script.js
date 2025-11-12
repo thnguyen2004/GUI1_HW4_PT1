@@ -1,3 +1,6 @@
+// github username: thnguyen2004
+// Student email: Thomas_Nguyen3@student.uml.edu
+
 // Event listeners
 document.querySelector("form").addEventListener("submit", generateTable);
 document.addEventListener("DOMContentLoaded", generateTable);
